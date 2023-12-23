@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+}
+
+body {
+    color: #333; /* Couleur du texte par défaut */
+    background-color: #fff; /* Couleur de fond par défaut */
+}
+
+.carousel-item {
+    display: flex;
+    align-items: center;
+}
+
+#carousel {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+/* Styles pour le mode sombre */
+body.dark-mode {
+    color: #fff; /* Couleur du texte en mode sombre */
+    background-color: #333; /* Couleur de fond en mode sombre */
+}
+
+body.dark-mode .carousel-item {
+    border: 1px solid #fff; /* Bordure des éléments en mode sombre */
+}
+
+body.dark-mode #carousel {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Ombre en mode sombre */
+}
+
+.carousel-item {
+    display: flex;
+    align-items: center; /* Centrer verticalement le contenu */
+}
+
+#carousel {
+    width: 150px; /* Largeur de l'image carrée */
+    height: 150px; /* Hauteur de l'image carrée */
+    border-radius: 8px; /* Bord arrondi pour l'esthétique */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère pour la profondeur */
+    margin-right: 20px; /* Marge à droite pour espacer du texte à droite */
+}
+
+body{
+    width: 100vw;/* vw sert a prendre toute la largeur*/
+    height: 50vh;/* vw sert a prendre toute la hauteur*/
+}
+header{
+    background-color: rgb(255, 255, 255);
+    height: 175px;
+   
+}
+.titre {
+    border: 5px solid rgb(0, 0, 0);
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slogan {
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: black;
+    border-bottom: 2px solid white;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav > ul li:hover .sous{
+    display: block;
+}
+
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+
+.deroulant > a::after{
+    content:"▼";
+    font-size: 12px;
+}
+
+
+footer  { /*bas de page */
+    color: aliceblue;
+    background-color: rgb(17, 16, 16);
+    height: 35%;
+}
+@media screen and (max-width: 800px) {
+    body {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+    .titre {
+        width: 100%;
+    }
+    .slogan {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+    }
+    .menu {
+        width: 100%;
+    }
+    .drapeau {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    body {
+        width: 70%;
+    }
+    header {
+        width: 70%;
+    }
+    .titre {
+        width: 70%;
+    }
+    .slogan {
+        width: 70%;
+    }
+    nav {
+        width: 70%;
+    }
+    .menu {
+        width: 70%;
+    }
+    .drapeau {
+        width: 70%;
+    }
+    footer {
+        width: 70%;
+    }
+}
+
+
+
+
+
+

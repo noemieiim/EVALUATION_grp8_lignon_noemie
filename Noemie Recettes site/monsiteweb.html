@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Recettes Bretonnes</title>
+    <link rel="stylesheet" href="css/monsiteweb.css">
+</head>
+<body>
+    <header>
+        <img class="titre" src="img/titre.png"></img>
+    </header>
+    <div class="carousel-item"> 
+        <img id="carousel" src="img/bol.webp"  alt="Image 1">
+    </div>
+    <script src="script.js"> </script>
+    <h3 class="slogan">Saveurs d'antan : Des recettes d'antan bretonnes qui ont traversé le temps et réchauffent nos cœurs aujourd'hui.</h3>
+    <nav class="menu">
+        <ul>
+            <li class="deroulant"><a href="#">Menu</a>
+                <ul class="sous">
+                    <li><a href="platsbretonsucre.html">Recettes Sucrées</a></li>
+                    <li><a href="platsbretonsale.html">Recettes Salées</a></li>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="apropos.html">A propos</a></li>
+                </ul>
+            </li>
+        </ul>   
+    </nav>  
+    
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Bonjour, comment vous appelez-vous ?</legend>
+                <label for="prenom">Prénom</label>
+                <input type="text" value="" id="prenom" required>
+            </fieldset>
+            <fieldset>
+                <legend>Que souhaitez-vous cuisiner aujourd'hui ?</legend>
+                <label for="sucré">Recette Sucrée</label>
+                <input type="radio" name="gout" id="sucré">
+                <label for="salé">Recette salée</label>
+                <input type="radio" name="gout" id="salé" checked>
+            </fieldset>
+            <input type="reset" name="" id="">
+            <input type="submit" name="" id="envoyer">
+        </form>
+    </main>
+
+    <button id="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+    <footer>
+            <h4>Email : lacuisinedenoemie@marmiton.cook</h4>
+            <h4>Tel : 06 06 06 06 06</h4>
+    </footer>
+    
+</body>
+</html>
